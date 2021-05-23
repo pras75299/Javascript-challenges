@@ -8,6 +8,22 @@
 // Example:
 //   fib(4) === 3
 
-function fib(n) {}
+function fib(n) {
+    if(n <= 2) return 1;
+    return fib(n - 1) + fib(n - 2);
+}
 
 module.exports = fib;
+
+
+/*********************************************************************
+ * time complexity is an issue with this solution.
+ * 
+    
+function fib(n) {
+    if(n <= 2) return 1;
+    return fib(n - 1) + fib(n - 2);
+}
+
+ * 
+ *********************************************************************/
